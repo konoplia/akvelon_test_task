@@ -1,8 +1,6 @@
 class NumberFormatter:
 
-    ALLOWED_SYMBOLS = [
-        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
-    ]
+    ALLOWED_SYMBOLS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
     def __init__(self):
         self.unicode_of_zero = ord('0')
@@ -30,18 +28,3 @@ class NumberFormatter:
         if number_as_string[0] == '-':
             result *= -1
         return result
-
-
-n = NumberFormatter()
-# print(n.parse_int(''))
-# print(n.parse_int('123-23'))
-# print(n.parse_int('+123-23'))
-# print(n.parse_int('123'))
-print(n.parse_int('-123'))
-# print(n.parse_int('+213'))
-# print(n.parse_int('+21-3'))
-# print(n.parse_int('dhfjh'))
-# print(n.parse_int('123445dhfjh'))
-# print(n.parse_int(223))
-# print(n.parse_int([1, 2]))
-# print(n.parse_int(''))
